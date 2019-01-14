@@ -2,8 +2,8 @@
 
 These components are examples without dependencies, to be freely used and adopted in your own frontend projects.
 
-[SimpleAudio] - an audio recorder and playback, useful to capture audio information
-[SimpleCamera] - a mobile device camera enabled webpage
+- [SimpleAudio] - an audio recorder and playback, useful to capture audio information
+- [SimpleCamera] - takes photos using a mobile device's camera
 
 ## To install a local version of this site
 
