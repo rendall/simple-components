@@ -1,17 +1,19 @@
 "use strict";
-const Microphone = () => {
+// buttonSelector is the selector that Microphone will use to find the toggle button
+// audioSelector is the selector that Microphone will use to find the audio output
+const Microphone = (buttonSelector, audioSelector) => {
     let audioRecorder = null;
     const onAudioDataAvailable = (e) => {
         const mimeType = e.target.mimeType; // default mimetype changes depending on browser
         const blob = new Blob([e.data], { type: mimeType });
         const audioURL = URL.createObjectURL(blob);
-        const audio = document.getElementById('audio');
+        const audio = document.getElementById(audioSelector);
         audio.controls = true;
         audio.src = audioURL;
         audio.play();
     };
-    const onAudioStart = (e) => document.querySelector('button#record_btn').innerHTML = "STOP";
-    const onAudioStop = (e) => document.querySelector('button#record_btn').innerHTML = "RECORD";
+    const onAudioStart = (e) => document.querySelector(buttonSelector).innerHTML = "STOP";
+    const onAudioStop = (e) => document.querySelector(buttonSelector).innerHTML = "RECORD";
     const onRecordClick = (e) => {
         if (audioRecorder && audioRecorder.state === "recording") {
             audioRecorder.stop();
@@ -29,6 +31,6 @@ const Microphone = () => {
             })
                 .catch(err => console.log('err', JSON.stringify(err)));
     };
-    document.querySelector('button#record_btn').addEventListener('click', onRecordClick);
+    document.querySelector(buttonSelector).addEventListener('click', onRecordClick);
 };
-Microphone();
+Microphone('button#record_btn', 'audio');
