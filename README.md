@@ -9,7 +9,7 @@ These components are examples without dependencies, to be freely used and adopte
 
 - clone this repository into your workspace
 - have [Node.js](https://nodejs.org/en/) installed with the command `node` and `npx` accessible from the command line
-- (optional) have [Yarn](https://yarnpkg.com) installed and accessible from the command line
+    - (optional) have [Yarn](https://yarnpkg.com) installed and accessible from the command line
 - navigate to this project's directory inside your workspace
 - type `npm install` or `yarn install` (this will install [http-server](https://www.npmjs.com/package/http-server))
 - type `npm start` or `yarn start` to launch the web server
