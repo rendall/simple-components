@@ -4,6 +4,7 @@ These components are examples without dependencies, to be freely used and adopte
 
 - [SimpleAudio] - an audio recorder and playback, useful to capture audio information
 - [SimpleCamera] - takes photos using a mobile device's camera
+- [SimpleNetlifyLogin] - a form that handles Netlify Identity login
 
 ## To install a local version of this site
 
