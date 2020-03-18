@@ -1,4 +1,4 @@
-# SimpleComponents
+# Simple Components
 
 These components are examples without dependencies, to be freely used and adopted in your own frontend projects.
 
