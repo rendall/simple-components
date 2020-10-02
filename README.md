@@ -1,10 +1,10 @@
-# SimpleComponents
+# Simple Components
 
 These components are examples without dependencies, to be freely used and adopted in your own frontend projects.
 
-- [SimpleAudio] - an audio recorder and playback, useful to capture audio information
-- [SimpleCamera] - takes photos using a mobile device's camera
-- [SimpleNetlifyLogin] - a form that handles Netlify Identity login
+- [SimpleAudio](https://rendall.github.io/SimpleComponents/SimpleAudio) - an audio recorder and playback, useful to capture audio information
+- [SimpleCamera](https://rendall.github.io/SimpleComponents/SimpleCamera) - takes photos using a mobile device's camera
+- [SimpleLogin](https://rendall.github.io/SimpleComponents/SimpleLogin) - a form that handles Netlify Identity login
 
 ## To install a local version of this site
 
